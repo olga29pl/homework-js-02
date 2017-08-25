@@ -1,12 +1,13 @@
 const n = parseFloat(prompt('Enter the number'));
- 
-function fib (n){
-    let x1 = 1, x2=1;
-    let x3;
-    for(let i=2;i<=n;i++){
-        x3=x1+x2;
-        x1=x2;
-        x3=x2;
+
+function fib(n) {
+    let x1 = 0;
+    let x2 = 1;
+    let x3 = 1;
+    for (let i = 2; i <= n; i++) {
+        x3 = x1 + x2;
+        x1 = x2;
+        x2 = x3;
     }
     return x3;
 }
@@ -15,7 +16,7 @@ function fib (n){
 //     const sqrt = Math.sqrt(5);
 //     const a =(1+sqrt)/2;
 //     const b =(1-sqrt)/2;
-//     return (Math.pow(a,n)-Math.pow(b,n)/sqrt);
+//     return (Math.pow(a,n) - Math.pow(b,n))/sqrt;
 // }
 
 // function fib(n){
@@ -37,6 +38,3 @@ function fib (n){
 // }
 const fibonacci = fib(n);
 document.write(fibonacci);
-
-
-
